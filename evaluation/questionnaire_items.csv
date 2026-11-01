@@ -1,0 +1,32 @@
+id,section,criterion,text
+A1,A,Respondent,Your main professional role
+A2,A,Respondent,Years of experience in telecommunications or GIS
+A3,A,Respondent,Type of organisation you work for or know best (optional)
+US1,B,Usability,I was able to complete the tasks (register a route; report a cut; find a free route) using the system.
+US2,B,Usability,I completed the tasks without needing a long explanation or training.
+US3,B,Usability,The screens and labels were clear and easy to understand.
+US4,B,Usability,I would be comfortable using a system like this regularly in my work.
+AP1,B,Applicability,The functions of the system match tasks that occur in telecommunications infrastructure management.
+AP2,B,Applicability,Having devices and fibre routes together on one map is useful for my kind of work.
+AP3,B,Applicability,The four user roles (field technician; asset manager; GIS administrator; decision maker) reflect how work is divided in practice.
+AP4,B,Applicability,A system like this could be applied to the kind of network I work with or know.
+DI1,B,Data integration capability,Keeping devices; routes; status and maintenance records in one database improves on separate spreadsheets or systems.
+DI2,B,Data integration capability,The GeoJSON and CSV exports would let me use the data in other tools such as GIS software or Excel.
+DI3,B,Data integration capability,The private and shared rules give operators enough control over what others can see.
+DI4,B,Data integration capability,A shared registry like this could combine data from several operators in practice.
+DS1,B,Decision-support relevance,The dashboard gives a useful overview of the condition of assets.
+DS2,B,Decision-support relevance,The free route view would help decide where spare capacity or routes can be used.
+DS3,B,Decision-support relevance,The fibre cut alerts would help staff respond faster to a cut.
+DS4,B,Decision-support relevance,The reports and history records would help justify maintenance decisions.
+IF1,B,Implementation feasibility,My organisation could introduce a system like this with the skills and staff it has.
+IF2,B,Implementation feasibility,The tools used (an open-source database and web map) are realistic for my organisation or industry.
+IF3,B,Implementation feasibility,Operators would be willing to share route information under clear rules.
+IF4,B,Implementation feasibility,Current regulation and security conditions in Nigeria would allow a shared registry to be adopted.
+T1,C,Technology,The system would work well with the tools and data my organisation already uses.
+T2,C,Technology,The system is not too complex for my organisation to adopt.
+O1,C,Organisation,Management in my organisation would support adopting a system like this.
+O2,C,Organisation,Engineering; GIS; IT and security teams in my organisation could coordinate to use it.
+E1,C,Environment,Regulatory pressure to protect fibre infrastructure would encourage adoption.
+E2,C,Environment,Competition between operators would not stop them from sharing data through a system like this.
+D1,D,Comments,What did you like most about the system?
+D2,D,Comments,What is missing or should change?

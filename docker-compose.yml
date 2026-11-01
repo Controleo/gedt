@@ -1,0 +1,29 @@
+# One command to run the database and the server together:  docker compose up --build
+# Then open http://localhost:3000 . Change the two secrets below before using it anywhere but your own computer.
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: gedt
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d gedt"]
+      interval: 5s
+      retries: 20
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/gedt
+      JWT_SECRET: change-this-to-a-long-random-text
+      SIM_FEED_KEY: change-this-too
+      DEMO_MODE: "true"
+      EMAIL_MODE: console
+    ports:
+      - "3000:3000"
+volumes:
+  dbdata:

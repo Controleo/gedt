@@ -1,0 +1,26 @@
+# Render blueprint: creates the web service. The database lives on Neon (see docs/DEPLOY.md).
+services:
+  - type: web
+    name: gedt-registry
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false          # paste your Neon connection string in the Render dashboard
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SIM_FEED_KEY
+        generateValue: true
+      - key: TRUST_PROXY
+        value: "true"
+      - key: DEMO_MODE
+        value: "true"
+      - key: EMAIL_MODE
+        value: console
