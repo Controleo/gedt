@@ -13,7 +13,8 @@
     "simulate": "node server/scripts/simulate-cut.js",
     "db:ensure": "node server/scripts/load-db.js --if-empty",
     "backup": "node server/scripts/backup-note.js",
-    "db:eval": "node server/scripts/run-sql.js database/seed_evaluation.sql"
+    "db:eval": "node server/scripts/run-sql.js database/seed_evaluation.sql",
+    "db:export": "node server/scripts/export-json.js"
   },
   "engines": {
     "node": ">=20"
